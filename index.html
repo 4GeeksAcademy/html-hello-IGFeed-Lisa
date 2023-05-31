@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Instagram feed</title>
+</head>
+<body>
+  <!--Feed header-->
+  <div class="row bg-light">
+    <div class="col-6 m-2">
+      <i class="bi bi-instagram"> Instagram</i>
+    </div>
+    <div class="col-4 mr-0 ">
+      <button type="button" class="btn btn-success mr-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+    </div>
+    <div class="col-1 ml-0">
+    <nav class="dropdown ">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="bi bi-gear-fill"></i>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Profile</a>
+        <a class="dropdown-item" href="#">Accesibility</a>
+        <a class="dropdown-item" href="#">Privacity and Data</a>
+        <a class="dropdown-item text-danger" href="#">Log out</a>
+      </div>
+    </nav>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="Inputcaption">Caption:</label>
+              <input type="text" class="form-control mt-2" id="Inputcaption" placeholder="Add the caption of your post here">
+            </div>
+          </form>
+          <div class="mt-2">
+            <button type="button" class="btn btn-light"><i class="bi bi-camera"></i></button>
+            <button type="button" class="btn btn-light"><i class="bi bi-geo-alt-fill"></i></button>  
+          </div>
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--grid button-->
+  <div class="container text-center mt-5">
+    <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#screen1" aria-expanded="true" aria-controls="screen1">
+      <i class="bi bi-grid-3x3"></i>
+    </button>
+    <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#screen2" aria-expanded="false" aria-controls="screen2">
+      <i class="bi bi-square"></i>
+    </button>
+  </div>
+
+  <!--Screen 1. The grid with three images by row-->
+  <div class="collapse show" id="screen1">
+    <div class="container-fluid">
+    <div class="row ">
+      <div class="col-4 ">
+        <img style="height:100%" src="https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" class="img-fluid" >
+      </div>
+      <div class="col-4 ">
+        <img  style=" height:100%" src="https://assets.weforum.org/article/image/XaHpf_z51huQS_JPHs-jkPhBp0dLlxFJwt-sPLpGJB0.jpg"  class="img-fluid me-1">
+      </div>
+      <div class="col-4 ">
+        <img style=" height:100%" src="https://awol.com.au/wp-content/uploads/2019/04/City-beaches-South-Beach-Miami-Florida-shutterstock_514982068-resize.jpg" class="img-fluid" >
+      </div>
+    </div>
+    
+    <div class="row mt-1 ">
+      <div class="col-4 ">
+        <img class="img-fluid"  style=" height: 100%;"src="https://www.nm.org//-/media/northwestern/healthbeat/images/healthy-tips/nm-9-health-issues-women_feature.jpg">
+      </div>
+      <div class="col-4 ">
+        <img class="img-fluid" style="height: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Football_in_Bloomington%2C_Indiana%2C_1996.jpg">
+      </div>
+      <div class="col-4 ">
+        <img class="img-fluid" style="height: 100%;" src="https://www.civitatis.com/f/francia/paris/entrada-tercera-planta-torre-eiffel-r32.jpg">
+      </div>
+    </div>
+    
+    <div class="row mt-1 ">
+      <div class="col-4">
+        <img class="img-fluid"  style=" height: 100%;"src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/01/family-portrait-ideas-togetherness.jpg?fit=1500%2C1159&ssl=1">
+      </div>
+      <div class="col-4 ">
+        <img class="img-fluid" style="height: 100%;" src="https://media.istockphoto.com/id/1047259374/photo/programming-source-code-abstract-background.jpg?s=612x612&w=0&k=20&c=07DAFiujCb58Zgu5ZArLprHiSKew5pCGqbTnop9GclA=">
+      </div>
+      <div class="col-4 ">
+        <img class="img-fluid" style="height: 100%;" src="https://media.istockphoto.com/id/1351445530/photo/african-student-sitting-in-classroom.jpg?s=612x612&w=0&k=20&c=1ICaZ03iFLzDmxfBkfDkmBGSgj1SDEpsM3eSDgB1KBk=">
+      </div>
+    </div>
+    </div> 
+    </div> 
+
+    <!--Screen 2 the grid with one image by row-->
+    <div class="collapse" id="screen2">
+        <div class="container border  ">
+          <div class="row">
+            <div class="col-10">
+              <p> My Crazy dog Spark!</p>
+            </div>
+            <div class="col-2">
+              <p>08/26</p>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-6">
+              <img  style="width: 520px;height: 100%"src="https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"  >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 ">
+              <p class="text-dark">204 Likes</p>
+              <p> This is an example of a very good photo that you can post on instagram  </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container border mt-2">
+          <div class="row">
+            <div class="col-10">
+              <p>South Beach Miami</p>
+            </div>
+            <div class="col-2">
+              <p>04/09</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img style="width: 520px;height: 100%" src="https://awol.com.au/wp-content/uploads/2019/04/City-beaches-South-Beach-Miami-Florida-shutterstock_514982068-resize.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-dark">26985 Likes</p>
+              <p> This is an example of a very good photo that you can post on instagram  </p>
+            </div>
+          </div>
+        </div>
+        <div class="container border mt-2">
+          <div class="row">
+            <div class="col-10">
+              <p>Amzing soocer game</p>
+            </div>
+            <div class="col-2">
+              <p>06/10</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img style="width: 520px;height: 100%"  src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Football_in_Bloomington%2C_Indiana%2C_1996.jpg"  >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text-dark">204 Likes</p>
+              <p> This is an example of a very good photo that you can post on instagram  </p>
+            </div>
+          </div>
+        </div>
+              </div>
+
+
+
+
+<!-- Bootstrap JavaScript files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
+  
